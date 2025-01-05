@@ -1,0 +1,450 @@
+/*Mobile*/
+
+* {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+body {
+    background-color: #fcecda;
+}
+
+header {
+    background-color: #ffff00e1;
+
+    /*Centraliza a imagem*/
+    text-align: center;
+
+    /*Deixa o header estatico enquanto meche na página*/
+    position: sticky;
+    top: 0;
+
+}
+
+.logo {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 30%;
+    max-width: 120px;
+}
+
+nav {
+    background-color: #fcecdad0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: none;
+
+    /*esse position fixed é pra deixar a cor de fundo do nav diferente da cor de fundo do header. e o width 100% é para ocupar toda a largura do header*/
+    position: fixed;
+    width: 100%;
+
+}
+
+nav>ul>li>a {
+    background-color: #ffd930;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 10px;
+    color: #471e1e;
+    text-decoration: none;
+    font-family: "sofia", cursive;
+    font-size: 1.5rem;
+
+    /*ele espande a largura da tag A e transforma em bloco*/
+    display: block;
+}
+
+
+/*Fixa os botões do menu e de fechar no topo direito da página*/
+#btHam,
+#btFechar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    /*Faz aparecer a mãozinha em cima do icone*/
+    cursor: pointer;
+}
+
+
+/*Oculta o Botão fechar*/
+#btFechar {
+    display: none;
+}
+
+article {
+    padding: 0 16px 0 16px;
+    max-width: 1280px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.destaque {
+    width: 100%;
+    border-radius: 0px 0px 15px 15px;
+}
+
+article>h1 {
+    font-family: "sofia", cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #471e1e;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+article>p {
+    color: #471e1e;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+}
+
+.cards {
+    background-color: #fcecdad0;
+
+}
+
+.cards>div>h1{
+    color: #471e1e;
+}
+
+.cards>div {
+    background-color: #ffd930;
+    border-radius: 15px;
+    border: solid 1px rgb(222, 246, 8);
+    padding: 16px;
+    margin: 16px;
+}
+
+.cards>div>img {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.cards>div>p {
+    color: #471e1e;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+}
+
+footer {
+    height: 300px;
+    background-color: #ffff00e1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+footer>p {
+    color: #471e1e;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.0rem;
+    padding-left: 8px;
+}
+
+footer>h2 {
+    color: #471e1e;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    padding-left: 8px;
+    margin-top: 8px;
+}
+
+.creditos {
+    margin-top: 24px;
+    border-top: solid 1px #471e1e;
+}
+
+.facebook {
+    width: 7%;
+    padding-left: 8px;
+    margin-top: 8px;
+
+}
+
+.linkedin{
+    width: 7%;
+    padding-left: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+
+.instagram {
+    width: 7%;
+    padding-left: 8px;
+    margin-top: 8px;
+}
+
+/*Localização*//*Localização*/
+/*Localização*//*Localização*/
+
+main>h1{
+    margin-top: 20px;
+    font-family:"sofia", cursive;
+    color: #471e1e;
+}
+
+.titulo2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.0rem;
+    color: #471e1e;
+
+}
+
+main>h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.0rem;
+    color: #471e1e;
+
+}
+
+
+main>iframe{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+form{
+    background-color: #ffd930;
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form>h1{
+    margin-top: 20px;
+    font-family:"sofia", cursive;
+    color: #471e1e;
+    text-align: center;
+}
+
+form>p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    margin-left: 20px;
+    color: #471e1e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form>input{
+    width: 525px;
+    height: 35px;
+    margin-left: 20px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.enviar{
+    background-color: #471e1e;
+    width: 95%;
+    height: 35px;
+    cursor: pointer;
+    color: #fcecda;
+}
+
+/*produtos*//*produtos*//*produtos*//*produtos*/
+
+main>p{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #471e1e;
+
+}
+
+.cardsProdutos{
+    margin-top: 20px;
+    background-color: #ffd930;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.cardsProdutos>img{
+    width: 100%;
+    border-radius: 20px;
+  
+}
+
+.cardsProdutos>p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 20px;
+    color: #471e1e;
+}
+
+
+a>input{
+    margin-top: 20px;
+    width: 100%;
+    height: 45px;
+    background-color: #471e1e;
+    color: #fcecda;
+    cursor: pointer;
+}
+
+
+
+
+
+/*Desktop*/
+
+@media(min-width:1024px) {
+
+    #btHam,
+    #btFechar {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+        background: none;
+    }
+
+    header {
+        display: flex;
+
+    }
+
+    ul {
+        display: flex;
+        justify-content: end;
+        list-style-type: none;
+    }
+
+    #menu>ul>li>a {
+        background: none;
+    }
+
+    .logo {
+        width: 500px;
+        height: 100px;
+       margin-left: 40px;
+
+        
+        cursor: pointer;
+    }
+
+    .destaque {
+        margin-top: 8px;
+        padding: 8px;
+    }
+
+    .cards {
+        display: flex;
+    }
+
+    .cards>div>img{
+        width: 100%;
+    }
+
+    .cards>div>p{
+        margin-top: 20px;
+    }
+    .cards>div>h1{
+        margin-top: 20px;
+    }
+
+    .croissant{
+        width: 100%;
+        height: 300px;
+    }
+
+    .pao{
+        width: 100%;
+        height: 300px;
+    }
+    
+
+    .facebook {
+        width: 4%;
+        padding-left: 8px;
+        margin: 8px;
+    }
+
+    .linkedin{
+        width: 4%;
+        padding-left: 8px;
+        margin: 8px;
+    }
+
+    .instagram {
+        width: 4%;
+        padding-left: 8px;
+        margin: 8px;
+    }
+
+    #alinhasRedesSociais{
+        display: flex;
+    }
+
+    /*Localização*//*Localização*//*Localização*/
+
+   main>iframe{
+    width: 1100px;
+    height: 500px;
+   }
+
+   main>h2{
+    font-size: 1.5rem;
+   }
+
+   .titulo2{
+    font-size: 1.5rem;
+   }
+
+   /*Contato*/
+
+   form{
+    display: flex;
+    align-items: center;
+   }
+
+
+   form>p{
+    font-size: 1.9rem;
+   }
+
+   form>input{
+    width: 1000px;
+    height: 35px;
+   }
+
+   .enviar{
+    background-color: #471e1e;
+    width: 1015px;
+    height: 35px;
+    cursor: pointer;
+    color: #fcecda;
+}
+
+/*produtos*//*produtos*//*produtos*//*produtos*//*produtos*//*produtos*/
+
+.sectionCards{
+    display: flex;
+    
+}
+
+
+
+}
